@@ -17,7 +17,6 @@ header{
     margin: 0 0 0 30px;
     width:  200px;
 }
-
 .login{
     background: linear-gradient(#21C08B, #AB88FF);
     display: flex;
@@ -35,6 +34,9 @@ header{
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 .login__container--form{
     display: flex;
@@ -97,4 +99,45 @@ header{
 }
 .button{
     background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #AB88FF;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+        
+    }
 }
